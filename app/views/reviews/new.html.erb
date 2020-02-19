@@ -1,0 +1,6 @@
+<div class="container">
+  <h1>New Review</h1>
+  <%= render "form", review: @review %>
+  <hr>
+  <h4><%= link_to "Go back", restaurant_path(@restaurant), class: "btn btn-primary" %></h4>
+</div>

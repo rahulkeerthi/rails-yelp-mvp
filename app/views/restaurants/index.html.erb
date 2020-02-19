@@ -1,0 +1,17 @@
+<div class="nav">
+  <div class="container py-3">
+    <h1><STRONG>Restaurants</STRONG></h1>
+  </div>
+</div>
+
+<div class="container">
+  <h4><%= link_to "Add restaurant", new_restaurant_path, class: "btn btn-primary" %></h4>
+  <hr>
+  <ol>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <h3><%= link_to restaurant.name, restaurant_path(restaurant) %></h3>
+    </li>
+  <% end %>
+  </ol>
+</div>
